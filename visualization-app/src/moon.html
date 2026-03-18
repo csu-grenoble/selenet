@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.137/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.137/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+
+  <div id="timeBox">
+    <div><strong>🌍 Earth (UTC)</strong></div>
+    <div id="earthTime">--:--:--</div>
+
+    <hr>
+
+    <div><strong>🌙 Moon (average time)</strong></div>
+    <div id="moonTime">--:--:--</div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<!-- bouton flottant -->
+<button id="panelToggle">☰</button>
+
+<!-- panneau -->
+<div id="sidePanel" class="open">
+  <h3>Display Control</h3>
+
+  <!-- Section 1 -->
+  
+
+  <!-- Section 2 -->
+  <details id="box_sat">
+    <summary>Satellites</summary>
+    
+  </details>
+
+  <details id="box_sensor">
+    <summary> Sensor </summary>
+  </details>
+
+  <!-- Section 3 🛰️  -->
+  
+</div>
+
+<div id="infoPanel">
+    <h3 id="infoTitle">Object information</h3>
+    <div id="infoContent">
+        Click on an object to see its informations.
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
