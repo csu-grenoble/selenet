@@ -1,0 +1,8 @@
+orbit-generator/__pycache__/
+orbit-generator/.venv/
+orbit-generator/src/managers/__pycache__/
+orbit-generator/src/utils/__pycache__/
+
+visualization-app/node_modules/
+visualization-app/dist/
+visualization-app/package-lock.json
