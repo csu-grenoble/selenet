@@ -1,0 +1,26 @@
+{
+    "1_clem.bsp": {
+        "display_name": "Clementine (Deep Space Program)",
+        "Mass": "100 kg",
+        "Frequency": "S-Band",
+        "Data_rate": "51.2 Kb/s",
+        "Orbit": "Elliptical lunar orbit",
+        "description": "Joint BMDO/NASA mission to test sensors and observe the Moon."
+    },
+    "3_lro.bsp": {
+        "display_name": "LRO (Lunar Reconnaissance Orbiter)",
+        "Mass": "1916 kg",
+        "Frequency": "S-Band (TT&C), Ka-Band (Data)",
+        "Data_rate": "a few Kb/s (S-Band) up to 100 Mb/s (Ka-Band)",
+        "Orbit": "Low lunar orbit",
+        "description": "NASA satellite in polar orbit used to map the Moon."
+    },
+    "2_apollo.bsp": {
+        "display_name": "Apollo 16 Subsatellite",
+        "Mass": "36 kg",
+        "Frequency": "S-Band",
+        "Data_rate": "128 kb/s",
+        "Orbit": "Low lunar orbit",
+        "description": "Small satellite deployed by the Apollo 16 crew to study lunar plasma."
+    }
+}

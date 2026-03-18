@@ -1,0 +1,38 @@
+export default [
+
+    {
+        "text": "Apollo_11",
+        "latitude": 0.67416,
+        "longitude": 23.47315
+    },
+    {
+        "text": "Apollo_14",
+        "latitude": -3.64417,
+        "longitude": 342.52135
+    },
+    {
+        "text": "Apollo_15",
+        "latitude": 26.13341,
+        "longitude": 3.6285
+    },
+    {
+        "text": "Lunokhod_1",
+        "latitude": 38.2378,
+        "longitude": -35.0017
+    },
+    {
+        "text": "Lunokhod_2",
+        "latitude": 25.83232,
+        "longitude": 30.92215
+    },
+    {
+        "text": "lunar_base_station",
+        "latitude": -90.0,
+        "longitude": 0.0
+    },
+    {
+        "text": "radio_telescope",
+        "latitude": 0.0,
+        "longitude": 180.0
+    }
+];
