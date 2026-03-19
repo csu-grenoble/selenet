@@ -26,10 +26,12 @@ export function display_details(viewer,dataSource,id){
             if(Cesium.JulianDate.greaterThanOrEquals(interval.stop, viewer.clock.currentTime) && Cesium.JulianDate.greaterThanOrEquals(viewer.clock.currentTime, interval.start)){
                
                 const start = document.createElement("p");
-                start.textContent = "visible depuis: " + interval.start;
+                // TODO shorten the datetime format
+                start.textContent = "Visible since: " + interval.start;
 
                 const stop = document.createElement("p");
-                stop.textContent = "visible jusqu'à: " + interval.stop;
+                // TODO shorten the datetime format
+                stop.textContent = "Visible until: " + interval.stop;
 
                 infoContent.appendChild(start);
                 infoContent.appendChild(stop);
@@ -61,6 +63,7 @@ export function display_details(viewer,dataSource,id){
                 }
             }
         })
+        
         // const link = document.createElement("a");
         // link.textContent = "Follow this link for more information on this object";
         // link.href = "https://fr.wikipedia.org/wiki/"+entity.name
@@ -127,9 +130,8 @@ export function display_details(viewer,dataSource,id){
             imgElement.alt = image.description;
 
             infoContent.appendChild(imgElement);
-            
 
-        }).catch(err => console.error("Pas d'image local disponible pour cet objet "));
+        }).catch(err => console.error("No image for this object"));
         getWikipediaInfo(entity.name) 
     }
 }
@@ -171,7 +173,7 @@ export function getWikipediaInfo(objectName) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            // Vérifie s'il y a une image dans la page
+            // TODO : Translate : Vérifie s'il y a une image dans la page
             if (data.originalimage && data.originalimage.source) {
                 const imgElement = document.createElement("img");
                 imgElement.src = data.originalimage.source;
@@ -180,18 +182,18 @@ export function getWikipediaInfo(objectName) {
                 infoContent.appendChild(imgElement);
                 //console.log(`Image pour ${objectName}:`, data.originalimage.source);
             } else if (data.thumbnail && data.thumbnail.source) {
-                // fallback sur la miniature si l'image originale n'existe pas
+                // TODO : Translate : fallback sur la miniature si l'image originale n'existe pas
                 const imgElement = document.createElement("img");
                 imgElement.src = data.thumbnail.source;
                 imgElement.alt = objectName;
 
                 infoContent.appendChild(imgElement);
-                console.log(`Miniature pour ${objectName}:`, data.thumbnail.source);
+                console.log(`Thumbnail for ${objectName}:`, data.thumbnail.source);
             } else {
-                console.log(`Aucune image trouvée pour ${objectName}`);
+                console.log(`No image fournd for ${objectName}`);
             }
         })
-        .catch(err => console.error("Erreur en récupérant l'info Wikipedia:", err));
+        .catch(err => console.error("Error retrieving Wikipedia information:", err));
 }
 
 
@@ -214,7 +216,3 @@ export function CountSat(id,dataSource,viewer){
             }
         })
 }
-
-// Exemple d'utilisation
-// const satellites = ["Hubble Space Telescope", "Landsat 8", "Sentinel-2", "TIROS-1"];
-// satellites.forEach(sat => getWikipediaInfo(sat));
