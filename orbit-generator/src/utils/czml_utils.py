@@ -1,3 +1,9 @@
+#
+# SeleNet
+#
+# Authors : Nada Yassine, Meli Scott Douanla 
+#
+
 import json
 
 def generate_header_czml(iso_start, iso_end):

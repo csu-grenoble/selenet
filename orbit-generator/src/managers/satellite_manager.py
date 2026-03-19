@@ -1,3 +1,9 @@
+#
+# SeleNet
+#
+# Authors : Nada Yassine, Meli Scott Douanla 
+#
+
 import numpy as np
 import json
 import os

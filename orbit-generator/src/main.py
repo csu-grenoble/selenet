@@ -1,3 +1,9 @@
+#
+# SeleNet
+#
+# Authors : Nada Yassine, Meli Scott Douanla 
+#
+
 import sys
 import os
 import json

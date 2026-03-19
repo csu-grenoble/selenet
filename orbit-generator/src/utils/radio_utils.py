@@ -1,3 +1,9 @@
+#
+# SeleNet
+#
+# Authors : Nada Yassine, Meli Scott Douanla 
+#
+
 import spiceypy as spice
 import os
 import numpy as np
