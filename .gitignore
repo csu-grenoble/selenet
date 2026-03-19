@@ -6,3 +6,6 @@ orbit-generator/src/utils/__pycache__/
 visualization-app/node_modules/
 visualization-app/dist/
 visualization-app/package-lock.json
+
+
+visualization-app/public/
