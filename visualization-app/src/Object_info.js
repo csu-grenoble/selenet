@@ -1,4 +1,8 @@
-
+/*
+ * SeleNet
+ * 
+ * Authors : Nada Yassine, Meli Scott Douanla 
+ */
 import * as Cesium from "cesium";
 
 
@@ -84,23 +88,23 @@ export function display_details(viewer,dataSource,id){
         console.log("Altitude:", altitude, "meters");
 
 
-        //calcul de l'altitude
+        // Compute altitude
         const altitudeKm = (altitude / 1000).toFixed(2);
         const altText = document.createElement("p");
         altText.textContent = "Altitude : " + altitudeKm + " km";
         infoContent.appendChild(altText);
 
-        //calcul de la vitesse
+        // Compute speed
         const position1 = entity.position.getValue(time);
 
         const previousTime = Cesium.JulianDate.addSeconds(time, -30, new Cesium.JulianDate());
         const position0 = entity.position.getValue(previousTime);
         const distance = Cesium.Cartesian3.distance(position1, position0);
         const speed = distance / 30; 
-        console.log("Vitesse :", speed, "m/s");
+        console.log("Speed :", speed, "m/s");
 
         const speedText = document.createElement("p");
-        speedText.textContent = "Vitesse : " + speed + " m/s";
+        speedText.textContent = "Speed : " + speed + " m/s";
         infoContent.appendChild(speedText);
 
         searchInfo(entity.name)

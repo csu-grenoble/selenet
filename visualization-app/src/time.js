@@ -1,3 +1,9 @@
+/*
+ * SeleNet
+ * 
+ * Authors : Nada Yassine, Meli Scott Douanla 
+ */
+
 function getLunarTime(dateUTC) {
   const lunarDayMs = 29.5 * 24 * 60 * 60 * 1000;
 

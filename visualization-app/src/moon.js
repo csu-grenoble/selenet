@@ -1,3 +1,8 @@
+/*
+ * SeleNet
+ * 
+ * Authors : Nada Yassine, Meli Scott Douanla 
+ */
 
 import * as Cesium from "cesium";
 //import Sandcastle from "Sandcastle";

@@ -1,4 +1,10 @@
- export function handle_panel(dataSource){
+/*
+ * SeleNet
+ * 
+ * Authors : Nada Yassine, Meli Scott Douanla 
+ */
+
+export function handle_panel(dataSource){
 
     
     var entities = dataSource.entities.values
