@@ -1,15 +1,16 @@
-# Moteur de Calcul
+# SeleNet :: Moteur de Calcul
 
 Ce dossier contient les scripts Python et les données nécessaires pour calculer les positions précises des satellites (LRO, Clementine, Apollo) autour de la Lune et générer les fichiers de visualisation pour Cesium.
 
 ## 1. Présentation
-Le module utilise SPICE via la bibliothèque SpicePy, une interface python développé par les ingénieurs de la NASA.
+Le module utilise SPICE via la bibliothèque SpicePy, une interface python développée par les ingénieurs de la NASA.
 
-**SPICE** est la librairie officielle de la NASA (NAIF) pour la navigation spatiale.
-Dans ce projet, nous l'utilisons pour :
-* Lire les fichiers de données de la NASA (appelés "Kernels").
-* Convertir les dates humaines en temps machine précis.
-* Calculer les coordonnées X, Y, Z des satellites seconde par seconde.
+**SPICE** est la bibliothèque officielle de la NASA (NAIF) pour la navigation spatiale.
+
+Dans ce projet, nous utilisons celles-ci pour :
+* lire les fichiers de données de la NASA (appelés "Kernels").
+* convertir les dates humaines en temps machine précis.
+* calculer les coordonnées X, Y, Z des satellites seconde par seconde.
 
 ## 2. Installation (Première fois)
 
@@ -34,7 +35,7 @@ pip install spiceypy numpy matplotlib
 ## 3. Lancement
 Une fois l'environnement mis en place, il faut se placer dans le dossier **src/**. 
 
-Lancer la commande *python main.py* ou *python3 main.py*
+Lancer la commande `python main.py` ou `python3 main.py`
 
 Cette commande va permettre de générer à la fin le fichier CZML qui sera utilisé par la partie visuelle.
 
@@ -43,30 +44,32 @@ Le module est structuré pour etre modulaire et automatisé.
 
 Voici l'explication de chaque dossier et fichiers :
 
-* **kernels/** : Le dossier le plus important. Il contient les données brutes de la NASA.
-    - *.bsp (SPK) : Les fichiers de Position (Trajectoire de la Lune, de LRO, etc.).
-    - *.tls (LSK) : Le fichier de Temps (Gère les secondes intercalaires).
+* **`kernels/`** : Le dossier le plus important. Il contient les données brutes de la NASA.
+    - `*.bsp` (SPK) : Les fichiers de Position (Trajectoire de la Lune, de LRO, etc.).
+    - `*.tls` (LSK) : Le fichier de Temps (Gère les secondes intercalaires).
   
-* **src/** : 
-  * **managers/** : ce dossier gère les entités.
-  * **utils/** : ce dossier 
-    * centralise des fonctions utilitaires pour la manipulation de la bibliothèque SpiceyPy (spice_utils.py) et la génération de paquets au format CZML (czml_utils.py).
-    * regoupe l'ensemble des algorithmes pour le calcul des liens de communication, effet doppler
-    * intègre des outils de performance (perf_utils.py)
+* **`src/`** : 
+  * **`managers/`** : ce dossier gère les entités.
+  * **`utils/`** : ce dossier 
+    * centralise des fonctions utilitaires pour la manipulation de la bibliothèque SpiceyPy (`spice_utils.py`) et la génération de paquets au format `CZML` (`czml_utils.py`).
+    * regoupe l'ensemble des algorithmes pour le calcul des liens de communication, effet Doppler
+    * intègre des outils de performance (`perf_utils.py`)
   
-* **config.py** : Ce fichier centralise les paramètres globaux du moteur de calcul, tels que les chemins d'accès aux Kernels SPICE, les pas de temps de simulation et les constantes physiques pour les bilans de liaison.
+* **`config.py`** : Ce fichier centralise les paramètres globaux du moteur de calcul, tels que les chemins d'accès aux Kernels SPICE, les pas de temps de simulation et les constantes physiques pour les bilans de liaison.
   
-* **fixe_coord.js** : Ce fichier répertorie les coordonnées géographiques (latitude, longitude, altitude) de tous les points fixes sur le sol lunaire.
+* **`fixe_coord.js`** : Ce fichier répertorie les coordonnées géographiques (latitude, longitude, altitude) de tous les points fixes sur le sol lunaire.
   
-* **satellites_db.js** : Ce fichier répertorie les caractéristiques techniques concernant les satellites étudiés.
+* **`satellites_db.js`** : Ce fichier répertorie les caractéristiques techniques concernant les satellites étudiés.
 
-* **main.py** : Ce fichier sert d'orchestrateur principal du projet; il appelle les différents managers pour faire tous les calculs et générer le fichier CZML final regroupant toutes les entités.
+* **`main.py`** : Ce fichier sert d'orchestrateur principal du projet; il appelle les différents managers pour faire tous les calculs et générer le fichier `CZML` final regroupant toutes les entités.
 
 
 ## 5. Algorithme et concepts techniques
+
 Cette section détail la logique derriere le moteur orbit-generator. Le passage des données de la NASA (kernel) à une visualisation et des analyses de communication repose sur trois piliers : la gestion des référentiels, le calcul géométrique et la modélisation physique du signal.
 
 ### 5.1 Référentiel et coordonnnées
+
 Le calcul des positions dans l'espace nécessite une définition du repère utilisé. Dans ce projet nous avons utilisé le référentiel J2000 proposé par SPICE. 
 
   Ce référentiel est utilisé pour calculer des trajectoires orbitales. C'est un repère fixe par rapport aux étoiles lointaines.
@@ -74,7 +77,8 @@ Le calcul des positions dans l'espace nécessite une définition du repère util
 Or apres coup, ce référentiel n'est pas la meilleur option. Il faudrait opté pour le référentiel IAU_MOON.
 
 #### 5.1.1 Transformation des données des kernels en position X,Y,Z
-Cette étape est le point de passage entre les fichiers binaires bruts (.bsp) et les coordonnées cartésiennes utilisables pour la simulation.
+
+Cette étape est le point de passage entre les fichiers binaires bruts (`.bsp`) et les coordonnées cartésiennes utilisables pour la simulation.
 
 1. Appel depuis la fonction **process_all_satellites**
 
@@ -83,7 +87,7 @@ Cette étape est le point de passage entre les fichiers binaires bruts (.bsp) et
 
 2. Calcul des positions dans la fonction **compute_trajectory**
    
-La fonction spkpos interroge les kernels chargés en mémoire le vecteur de position d'un objet par rapport à un autre à un instant précis. Elle effectue une interpolation mathématique définis dans les fichiers de la NASA (.bsp). 
+La fonction spkpos interroge les kernels chargés en mémoire le vecteur de position d'un objet par rapport à un autre à un instant précis. Elle effectue une interpolation mathématique définis dans les fichiers de la NASA (`.bsp`). 
 
         pos, _ = spice.spkpos(str(id_sat), et_current, 'J2000', 'NONE', 'MOON')
         
@@ -93,7 +97,7 @@ La fonction spkpos interroge les kernels chargés en mémoire le vecteur de posi
 
 ### 5.2 Calcul de Position et Éléments Orbitaux
 
-Pour chaque satellite, le script main.py effectue une itération temporelle (pas de temps défini dans config.py).
+Pour chaque satellite, le script `main.py` effectue une itération temporelle (pas de temps défini dans config.py).
 
 - **Conversion Temporelle** : Passage du format UTC (ISO 8601) au temps SPICE.
 
@@ -105,7 +109,7 @@ Pour chaque satellite, le script main.py effectue une itération temporelle (pas
 #### 5.3.1 Lien de communication inter-satellites
 
 Le calcul de la connectivité entre deux satellites repose sur une validation de la distance Euclidienne. 
-Pour chaque instant t de la simulation, le moteur calcule la distance relative entre les deux entités dans la fonction **find_communication_link** : 
+Pour chaque instant t de la simulation, le moteur calcule la distance relative entre les deux entités dans la fonction **`find_communication_link`** : 
 
     v1 = sat1['positions_xyz'][t]
     v2 = sat2['positions_xyz'][t]
@@ -119,15 +123,17 @@ Pour chaque instant t de la simulation, le moteur calcule la distance relative e
 Dans ce cas, le calcul se fait en deux étape de validation
 
 ##### A.Validation Géométrique (Angle d'élévation)
+
 Le satellite ne doit pas seulement etre proche, il doit etre au dessus de l'horizon local.
 
-- **Vecteur Zénith** : Pour un point fixe (lat, lon), nous calculons le vecteur normal à la surface en utilisant le modèle de l'ellipsoïde lunaire via la fonction **surfnm** de la bibliothèque SPICE.
+- **Vecteur Zénith** : Pour un point fixe (lat, lon), nous calculons le vecteur normal à la surface en utilisant le modèle de l'ellipsoïde lunaire via la fonction **`surfnm`** de la bibliothèque SPICE.
 
-- **Calcul d'angle** : Nous calculons le vecteur entre le point fixe et le satellite. L'angle entre ce vecteur et le zénith est obtenu par la fonction **vsep** de la bibliothèque SPICE.
+- **Calcul d'angle** : Nous calculons le vecteur entre le point fixe et le satellite. L'angle entre ce vecteur et le zénith est obtenu par la fonction **`vsep`** de la bibliothèque SPICE.
 
-- **Condition** : L'élévation est de 90∘−angle zeˊnithal. Le lien est géométriquement possible si l'élévation est supérieure à un seuil (5∘ : ce seuil est pour l'instant choisi de manière arbitraire).
+- **Condition** : L'élévation est de 90∘−angle zénithal. Le lien est géométriquement possible si l'élévation est supérieure à un seuil (5∘ : ce seuil est pour l'instant choisi de manière arbitraire).
 
 ##### B. Bilan de liaison
+
 Ensuite nous vérifions si le signal radio est physiquement exploitable par le récepteur. Pour cela nous calculons la puissance reçu au niveau du satellite en utilisant l'équation du bilan de liaison : 
 
     P_rx = G_t + G_r + P_tx - FSPL
@@ -147,7 +153,7 @@ La variable FSPL représente l'affaiblissement du signal lié à la distance. El
 
 **Paramètre du modèle** : 
 
-Dans cette première version du projet, les constantes physiques (puissance, gains, fréquences) sont centralisées dans le fichier config.py. Ces valeurs ont été définies en concertation avec les porteurs de projet pour correspondre aux spécifications techniques réelles des équipements embarqués. 
+Dans cette première version du projet, les constantes physiques (puissance, gains, fréquences) sont centralisées dans le fichier `config.py`. Ces valeurs ont été définies en concertation avec les porteurs de projet pour correspondre aux spécifications techniques réelles des équipements embarqués. 
 
 Le lien n'est considéré comme "actif" que si Prx​ est supérieur au seuil de sensibilité du récepteur, c'est-à-dire -140 dB (valeur choisie après concertation avec les porteurs du projet)
 
@@ -155,7 +161,7 @@ Le lien n'est considéré comme "actif" que si Prx​ est supérieur au seuil de
 ### 5.4 Décalage de fréquence - Effet Doppler
 Lorsqu'un lien de communication est détecté entre un satellite et un point fixe au sol, nous calculons le décalage de fréquence et générons le graphe correspondant. 
 
-Les calculs sont implémenté dans le fichier **doppler_utils.py** dans la fonction **doppler_shifts**.
+Les calculs sont implémenté dans le fichier **`doppler_utils.py`** dans la fonction **`doppler_shifts`**.
 
 #### 5.4.1 Calcul de la vitesse radiale relative
 Pour calculer le Doppler, nous ne nous interessons pas à la vitesse absolue des satelittes, mais uniquement à leur vitesse radiale (la vitesse à laquelle ils s'approchent ou s'éloignent l'un de l'autre).
@@ -170,6 +176,6 @@ Le décalage Doppler *delta_f* est calculé selon la formule :
     Δf= v_r / c_light ​​⋅f0​
 
 où : 
-- v_r​ : Vitesse radiale (m/s).
-- c_light : Vitesse de la lumière (≈299792458 m/s).
-- f0​ : Fréquence nominale de la porteuse (Hz) définie dans config.py (FREQ_MHZ).
+- `v_r`​ : Vitesse radiale (m/s).
+- `c_light` : Vitesse de la lumière (≈299792458 m/s).
+- `f0`​ : Fréquence nominale de la porteuse (Hz) définie dans `config.py` (FREQ_MHZ).
