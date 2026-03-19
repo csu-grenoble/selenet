@@ -5,3 +5,6 @@ SeleNet is a simulation platform for lunar IoT networks that uses SPICE-based or
 ## Quick run 
 
 Follow the instruction on the orbit generator [Readme](orbit-generator/README_en.md), then the visualization app [Readme](visualization-app/README.md)
+
+![](media/selenet-cesium-01.jpg)
+![](media/selenet-cesium-02.jpg))
