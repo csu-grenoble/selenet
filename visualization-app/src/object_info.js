@@ -27,11 +27,11 @@ export function display_details(viewer,dataSource,id){
                
                 const start = document.createElement("p");
                 // TODO shorten the datetime format
-                start.textContent = "Visible since: " + interval.start;
+                start.textContent = "Visible since: " + Cesium.JulianDate.toIso8601(interval.start, 0);
 
                 const stop = document.createElement("p");
                 // TODO shorten the datetime format
-                stop.textContent = "Visible until: " + interval.stop;
+                stop.textContent = "Visible until: " + Cesium.JulianDate.toIso8601(interval.stop, 0);
 
                 infoContent.appendChild(start);
                 infoContent.appendChild(stop);

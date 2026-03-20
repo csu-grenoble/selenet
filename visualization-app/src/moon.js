@@ -12,7 +12,7 @@ import "./css/info.css"
 //import "../css/bucket.css"
 import { handle_panel,create_panel } from "./panel";
 import { updateClocks } from "./time";
-import { display_details } from "./Object_info";
+import { display_details } from "./object_info";
 console.log(window.CESIUM_BASE_URL);
 
 Cesium.Ion.defaultAccessToken = process.env.API_URL
