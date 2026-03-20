@@ -6,7 +6,7 @@
     width: 500px;
     max-height: 450px;
 
-    background: rgba(132, 132, 173, 0.9);
+    background: rgba(56, 56, 59, 0.9);
     color: white;
 
     padding: 15px;
@@ -21,7 +21,7 @@
 
 #infoPanel h3 {
     margin-top: 0;
-    color: #0026ff;
+    color: #f0f1f7;
 }
 
 #infoContent img {

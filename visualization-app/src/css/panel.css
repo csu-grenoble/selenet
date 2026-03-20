@@ -10,10 +10,6 @@ label {
   margin-left: 10px;
 }
 
-
-
-
-
 #panelToggle {
   position: absolute;
   top: 100px;
@@ -36,6 +32,10 @@ label {
   color: white;
   border-radius: 8px;
   z-index: 999;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+
 
   transform: translateX(0);
   transition: transform 0.3s;
