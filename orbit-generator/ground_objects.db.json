@@ -1,10 +1,4 @@
-/*
- * SeleNet
- * 
- * Authors : Nada Yassine, Meli Scott Douanla 
- */
-
-export default [
+[
 
     {
         "text": "Apollo_11",
@@ -41,4 +35,4 @@ export default [
         "latitude": 0.0,
         "longitude": 180.0
     }
-];
+]

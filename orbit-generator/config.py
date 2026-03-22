@@ -13,7 +13,9 @@ BASE_DIR_BACKEND = CURRENT_DIR
 
 KERNEL_DIR = os.path.join(BASE_DIR_BACKEND, 'kernels')
 
-DB_FILE = os.path.join(BASE_DIR_BACKEND, 'satellites_db.json')
+SATELLITES_DB_FILE = os.path.join(BASE_DIR_BACKEND, 'satellites.db.json')
+
+GROUND_OBJECTS_DB_FILE = os.path.join(BASE_DIR_BACKEND, 'ground_objects.db.json')
 
 OUTPUT_DIR = os.path.join(BASE_DIR_BACKEND, '..', 'visualization-app', 'public')
 
@@ -29,7 +31,7 @@ NOMBRE_DE_POINTS = 5000
 DISTANCE_CONTACT_KM = 5000 # Max distance for inter-satellite contact in km
 
 # --- COLORS ---
-COULEURS_SATELLITES = [
+SATELLITES_COLOR_MAP = [
     [255, 0, 0, 255],    # Red
     [0, 255, 0, 255],    # Green
     [0, 0, 255, 255],    # Blue
@@ -38,13 +40,14 @@ COULEURS_SATELLITES = [
     [255, 0, 255, 255],  # Magenta
     [255, 165, 0, 255]   # Orange
 ]
-# --- RADIO CHARACTERISTICS ---
 
-P_TX = 14 # dBm
-G_TX = 2 # dB 
-G_RX = 5 # dB
+# --- RADIO CHARACTERISTICS FOR THE Thingsat Lunar IoT Constellation ---
+
+P_TX = 14 # dBm (TX Max Power. Up to 22 dBm)
+G_TX = 2 # dBi (antenna gain)
+G_RX = 5 # dBi (antenna gain)
+
 FREQ_MHZ = 868 # MHz
-P_THREASHOLD = -141 # dBm
+P_THREASHOLD = -141 # dBm (-143 dBm for Semtech LR2021)
 
 MIN_ELEVATION = 5
-

@@ -13,11 +13,11 @@ from utils import spice_utils, czml_utils
 from utils.perf_utils import monitor_perf
 
 def load_satellite_db(db_file) : 
-    if os.path.exists(config.DB_FILE): 
-        with open(config.DB_FILE, 'r', encoding='utf-8') as f : 
+    if os.path.exists(config.SATELLITES_DB_FILE): 
+        with open(config.SATELLITES_DB_FILE, 'r', encoding='utf-8') as f : 
             return json.load(f)
 
-    print(f"Warning: DB file not found at {config.DB_FILE}")
+    print(f"Warning: DB file not found at {config.SATELLITES_DB_FILE}")
     return {}
 
 @monitor_perf
@@ -63,7 +63,7 @@ def process_all_satellites(spk_files, spk_path, db_satellites):
             sat_name = info_db.get('nom_affichage', f"Obj {id_sat}")
 
             desc_html = czml_utils.generate_html_description(info_db)
-            color = config.COULEURS_SATELLITES[index % len(config.COULEURS_SATELLITES)]
+            color = config.SATELLITES_COLOR_MAP[index % len(config.SATELLITES_COLOR_MAP)]
             
             czml_data.append(czml_utils.generate_satellite_packet(
                 id_sat, global_time["start"], global_time["end"], sat_name, desc_html, positions_meters, color))

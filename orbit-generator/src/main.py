@@ -22,7 +22,7 @@ def main():
     # 1. Setup & Init
     if not os.path.exists(config.OUTPUT_DIR): os.makedirs(config.OUTPUT_DIR)
     spice_utils.load_kernels()
-    db_satellites = sat_mgr.load_satellite_db(config.DB_FILE)
+    db_satellites = sat_mgr.load_satellite_db(config.SATELLITES_DB_FILE)
     
     # 2. Process Satellites - we compute there trajectory
     spk_path = os.path.join(config.KERNEL_DIR, 'SPK')
@@ -40,7 +40,9 @@ def main():
 
     # 4. Fixed Points (on the Moon) Links
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    fixe_coord_path = os.path.join(base_dir, "fixe_coord.js")
+
+    #fixe_coord_path = os.path.join(base_dir, "ground_objects.db.json")
+    fixe_coord_path = config.GROUND_OBJECTS_DB_FILE
     points_of_interest = fp_mgr.load_fixed_points(fixe_coord_path)
     czml_data += fp_mgr.handle_fixed_point_links(sat_list, points_of_interest, g_time, et_ref)
 

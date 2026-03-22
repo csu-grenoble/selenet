@@ -35,7 +35,7 @@ pip install spiceypy numpy matplotlib
 ## 3. Lancement
 Une fois l'environnement mis en place, il faut se placer dans le dossier **src/**. 
 
-Lancer la commande `python main.py` ou `python3 main.py`
+Lancer la commande `python src/main.py` ou `python3 src/main.py`
 
 Cette commande va permettre de générer à la fin le fichier CZML qui sera utilisé par la partie visuelle.
 
@@ -52,14 +52,14 @@ Voici l'explication de chaque dossier et fichiers :
   * **`managers/`** : ce dossier gère les entités.
   * **`utils/`** : ce dossier 
     * centralise des fonctions utilitaires pour la manipulation de la bibliothèque SpiceyPy (`spice_utils.py`) et la génération de paquets au format `CZML` (`czml_utils.py`).
-    * regoupe l'ensemble des algorithmes pour le calcul des liens de communication, effet Doppler
+    * regoupe l'ensemble des algorithmes pour le calcul des liens de communication et les effets Doppler
     * intègre des outils de performance (`perf_utils.py`)
   
 * **`config.py`** : Ce fichier centralise les paramètres globaux du moteur de calcul, tels que les chemins d'accès aux Kernels SPICE, les pas de temps de simulation et les constantes physiques pour les bilans de liaison.
   
-* **`fixe_coord.js`** : Ce fichier répertorie les coordonnées géographiques (latitude, longitude, altitude) de tous les points fixes sur le sol lunaire.
+* **`ground_objects.db.json`** : Ce fichier répertorie les coordonnées géographiques (latitude, longitude, altitude) de tous les points fixes sur le sol lunaire.
   
-* **`satellites_db.js`** : Ce fichier répertorie les caractéristiques techniques concernant les satellites étudiés.
+* **`satellites.db.json`** : Ce fichier répertorie les caractéristiques techniques concernant les satellites étudiés.
 
 * **`main.py`** : Ce fichier sert d'orchestrateur principal du projet; il appelle les différents managers pour faire tous les calculs et générer le fichier `CZML` final regroupant toutes les entités.
 
