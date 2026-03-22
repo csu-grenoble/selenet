@@ -15,15 +15,22 @@ import { updateClocks } from "./time";
 import { display_details } from "./object_info";
 console.log(window.CESIUM_BASE_URL);
 
+
+
+/*
+ * Parameters
+ */
+
+// Set the token for getting the asset
 Cesium.Ion.defaultAccessToken = process.env.API_URL
-
-
-
-// Set the ellipsoid to be the moon before creating the viewer
+// Set the ellipsoid to be the Moon before creating the viewer
 Cesium.Ellipsoid.default = Cesium.Ellipsoid.MOON;
+// Set the asset for Moon
+const Cesium_IonAssetId = 2684829; // Moon
+// Set the the generated CZML data source for Moon
+const Cesium_CzmlDataSource = "/global_simu_data.czml";
 
 
-Cesium.Ion.defaultAccessToken = process.env.API_URL
 const viewer = new Cesium.Viewer("cesiumContainer", {
   terrainProvider: false,
   baseLayer: false,
@@ -33,14 +40,14 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
   geocoder: false,
   shadows: true,
   shouldAnimate: true,
-  ellipsoid: Cesium.Ellipsoid.MOON
+  ellipsoid: Cesium.Ellipsoid.default
 });
 
 const scene = viewer.scene;
 
 // Add Moon Terrain 3D Tiles
 try {
-  const tileset1 = await Cesium.Cesium3DTileset.fromIonAssetId(2684829, {
+  const tileset1 = await Cesium.Cesium3DTileset.fromIonAssetId(Cesium_IonAssetId, {
     // Allow clamp to 3D Tiles
     enableCollision: true,
   });
@@ -49,7 +56,7 @@ try {
   console.log(`Error loading tileset: ${error}`);
 }
 
-const dataSource = await Cesium.CzmlDataSource.load("/global_simu_data.czml")
+const dataSource = await Cesium.CzmlDataSource.load(Cesium_CzmlDataSource);
 viewer.dataSources.add(dataSource);
 
 
