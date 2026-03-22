@@ -100,10 +100,14 @@ export function display_details(viewer,dataSource,id){
         // Compute speed
         const position1 = entity.position.getValue(time);
 
+
+        // TODO change -30 and 30 by the value used for the generation
         const previousTime = Cesium.JulianDate.addSeconds(time, -30, new Cesium.JulianDate());
         const position0 = entity.position.getValue(previousTime);
         const distance = Cesium.Cartesian3.distance(position1, position0);
-        const speed = distance / 30; 
+        let speed = distance / 30;
+        speed = Math.round(speed);
+
         console.log("Speed :", speed, "m/s");
 
         const speedText = document.createElement("p");
