@@ -3,59 +3,59 @@
     {
       "id": "Sat_-40",
       "src": "assets/images/clementine.png",
-      "description": "Satellite météo"
+      "description": "Clementine"
     },
     {
       "id": "Sat_-916300",
       "src": "assets/images/apollo-16.png",
-      "description": "Satellite GPS"
+      "description": "Appolo 16"
     },
     {
       "id": "Sat_-85",
-      "src": "assets/images/LRO.png",
-      "description": "La Lune"
+      "src": "assets/images/lro.png",
+      "description": "LRO"
     },
 
     {
       "id": "Sensor_Apollo_11",
-      "src": "assets/images/Apollo-11.jpeg",
-      "description": "La Lune"
+      "src": "assets/images/apollo-11.jpg",
+      "description": "Apollo 11"
     },
 
     {
       "id": "Sensor_Apollo_14",
       "src": "assets/images/apollo-14.jpg",
-      "description": "La Lune"
+      "description": "Apollo 14"
     },
 
     {
       "id": "Sensor_Apollo_15",
       "src": "assets/images/apollo-15.png",
-      "description": "La Lune"
+      "description": "Apollo 15"
     },
 
     {
       "id": "Sensor_Lunokhod_1",
-      "src": "assets/images/Lunokhod-1.png",
-      "description": "La Lune"
+      "src": "assets/images/lunokhod-1.png",
+      "description": "Lunokhod 1"
     },
 
     {
       "id": "Sensor_Lunokhod_2",
-      "src": "assets/images/Lunokhod-2.jpg",
-      "description": "La Lune"
+      "src": "assets/images/lunokhod-2.jpg",
+      "description": "Lunokhod 2"
     },
 
     {
       "id": "Sensor_lunar_base_station",
       "src": "assets/images/lunar-base.jpg",
-      "description": "La Lune"
+      "description": "Lunar Base"
     },
 
     {
       "id": "Sensor_radio_telescope",
       "src": "assets/images/radio-telescope.png",
-      "description": "La Lune"
+      "description": "Moon Radio Telescope"
     }
   ]
 }
