@@ -5,7 +5,7 @@
 - Go to: https://ion.cesium.com/
 - Create an account if you do not already have one.
 - Open the **[Access Token section](https://ion.cesium.com/tokens)**, create a new token named `selenet` if you do not already have one, and copy it.
-- Save the token into the `.token.selenet` text file.
+- Save the copied token into the `.token.selenet` text file.
 - `npm install`: install all dependencies if they are not already installed (check that the node_modules folder exists).
 
 Once you are in cesium Ion, you need to add the moon asset to your assets. 
@@ -29,3 +29,4 @@ npm run build
 TOKEN=$(cat .token.selenet) 
 API_URL=$TOKEN npm start
 ```
+
