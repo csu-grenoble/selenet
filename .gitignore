@@ -1,5 +1,7 @@
 .DS_Store
 
+.venv
+
 orbit-generator/__pycache__/
 orbit-generator/.venv/
 orbit-generator/src/managers/__pycache__/
