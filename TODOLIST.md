@@ -31,6 +31,7 @@
 * [ ] control on camera for showing Mars
 * [ ] web responsive : resize the viewer when full screen and higher screen
 * [ ] better position for object info panel  
+* [ ] complete the credits for assets
 
 ## Mars
 
