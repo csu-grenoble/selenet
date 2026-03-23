@@ -30,3 +30,11 @@ TOKEN=$(cat .token.selenet)
 API_URL=$TOKEN npm start
 ```
 
+
+## Project layout
+
+TBC
+
+* **Assets** : [`./public/assets/images`](/public/assets/images)
+  * [Index (JSON)](./public/assets/images/images.json)
+  * [Credits for assets](./public/assets/images/CREDITS.md)

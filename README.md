@@ -19,7 +19,7 @@ Follow the instructions
 
 ## Assets
 
-Assess are into the directory `[visualization-app/public/assets/images](visualization-app/public/assets/images)`.
+Assets are into the directory [`visualization-app/public/assets/images`](visualization-app/public/assets/images).
 
 [Credits for assets](visualization-app/public/assets/images/CREDITS.md)
 
