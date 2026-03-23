@@ -57,7 +57,7 @@ Voici l'explication de chaque dossier et fichiers :
   
 * **`config.py`** : Ce fichier centralise les paramètres globaux du moteur de calcul, tels que les chemins d'accès aux Kernels SPICE, les pas de temps de simulation et les constantes physiques pour les bilans de liaison.
   
-* **`ground_objects.db.json`** : Ce fichier répertorie les coordonnées géographiques (latitude, longitude, altitude) de tous les points fixes sur le sol lunaire.
+* **`ground_objects.db.json`** : Ce fichier répertorie les coordonnées géographiques (latitude, longitude, altitude) de tous les objets/points fixes sur le sol lunaire.
   
 * **`satellites.db.json`** : Ce fichier répertorie les caractéristiques techniques concernant les satellites étudiés.
 
