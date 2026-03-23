@@ -35,6 +35,12 @@
     },
 
     {
+      "id": "Sensor_Apollo_16",
+      "src": "assets/images/apollo-16.png",
+      "description": "Apollo 16"
+    },
+
+    {
       "id": "Sensor_Lunokhod_1",
       "src": "assets/images/lunokhod-1.png",
       "description": "Lunokhod 1"
@@ -47,15 +53,15 @@
     },
 
     {
-      "id": "Sensor_lunar_base_station",
+      "id": "Sensor_Lunar_Base_Station",
       "src": "assets/images/lunar-base.jpg",
       "description": "Lunar Base"
     },
 
     {
-      "id": "Sensor_radio_telescope",
-      "src": "assets/images/radio-telescope.png",
-      "description": "Moon Radio Telescope"
+      "id": "Sensor_Lunar_Crater_Radio_Telescope",
+      "src": "assets/images/lcrt.jpg",
+      "description": "Lunar Crater Radio Telescope"
     }
   ]
 }

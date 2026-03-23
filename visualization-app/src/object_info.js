@@ -122,7 +122,7 @@ export function display_details(viewer,dataSource,id){
     if(entity.polyline){
 
     }else{
-        fetch("assets/images/image.json")
+        fetch("assets/images/images.json")
         .then(response => response.json())
         .then(data => {
 

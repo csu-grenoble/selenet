@@ -5,6 +5,7 @@
  */
 
 function getLunarTime(dateUTC) {
+  // TODO find the correct formulae
   const lunarDayMs = 29.5 * 24 * 60 * 60 * 1000;
 
   const reference = Date.UTC(2000, 0, 1); // J2000

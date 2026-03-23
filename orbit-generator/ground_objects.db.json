@@ -1,5 +1,4 @@
 [
-
     {
         "text": "Apollo_11",
         "latitude": 0.67416,
@@ -16,6 +15,11 @@
         "longitude": 3.6285
     },
     {
+        "text": "Apollo_16",
+        "latitude": -0.716667,
+        "longitude": -156.216667
+    },
+    {
         "text": "Lunokhod_1",
         "latitude": 38.2378,
         "longitude": -35.0017
@@ -26,12 +30,12 @@
         "longitude": 30.92215
     },
     {
-        "text": "lunar_base_station",
+        "text": "Lunar_Base_Station",
         "latitude": -90.0,
         "longitude": 0.0
     },
     {
-        "text": "radio_telescope",
+        "text": "Lunar_Crater_Radio_Telescope",
         "latitude": 0.0,
         "longitude": 180.0
     }
