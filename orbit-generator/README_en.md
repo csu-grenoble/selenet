@@ -84,7 +84,7 @@ This step is the transition point between raw binary files (.bsp) and the Cartes
 1. Call from the **process_all_satellites** function
 
     positions_km = spice_utils.compute_trajectory(
-    id_sat, et_start, config.NOMBRE_DE_POINTS, config.PAS_EN_SECONDES)
+    id_sat, et_start, config.NUMBER_OF_STEPS, config.SECONDS_PER_STEP)
 
 2. Calculation of positions in the **compute_trajectory** function
 

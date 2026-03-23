@@ -36,13 +36,13 @@ def process_all_satellites(spk_files, spk_path, db_satellites):
             # Sync Time & Header
             if global_time["start"] is None:
                 global_time["start"] = spice_utils.get_iso_date(et_start)
-                duration = config.NOMBRE_DE_POINTS * config.PAS_EN_SECONDES
+                duration = config.NUMBER_OF_STEPS * config.SECONDS_PER_STEP
                 global_time["end"] = spice_utils.get_iso_date(et_start + duration)
                 czml_data.append(czml_utils.generate_header_czml(global_time["start"], global_time["end"]))
 
             # Trajectory
             positions_km = spice_utils.compute_trajectory(
-                id_sat, et_start, config.NOMBRE_DE_POINTS, config.PAS_EN_SECONDES
+                id_sat, et_start, config.NUMBER_OF_STEPS, config.SECONDS_PER_STEP
             )
             if not positions_km: 
                 continue

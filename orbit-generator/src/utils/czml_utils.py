@@ -137,8 +137,8 @@ def generate_SatToSat_link_packet(sat1, sat2, intervals):
     Visibility is controlled by time intervals.
     """    
     return {
-        "id": f"Satellite/{sat1}-to-Satllite/{sat2}",
-        "name": f"Link {sat1}-{sat2}",
+        "id": f"Link_Satellite/{sat1}-to-Satllite/{sat2}",
+        "name": f"Link Sat{sat1} - Sat{sat2}",
         "polyline": {
             "show": intervals, 
             "width": 2,
@@ -165,7 +165,7 @@ def generate_PointToSat_link_packet(sat_id, point_id, intervals, description_int
     """
     return {
         "id": f"Link_{sat_id}_to_{point_id}",
-        "name": f"Link {sat_id} - {point_id}",
+        "name": f"Link Sat{sat_id} - {point_id}",
         "description": description_intervals,
         "polyline": {
             "show": intervals, 

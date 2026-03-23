@@ -83,7 +83,7 @@ Cette étape est le point de passage entre les fichiers binaires bruts (`.bsp`) 
 1. Appel depuis la fonction **process_all_satellites**
 
      positions_km = spice_utils.compute_trajectory(
-        id_sat, et_start, config.NOMBRE_DE_POINTS, config.PAS_EN_SECONDES)
+    id_sat, et_start, config.NUMBER_OF_STEPS, config.SECONDS_PER_STEP)
 
 2. Calcul des positions dans la fonction **compute_trajectory**
    
