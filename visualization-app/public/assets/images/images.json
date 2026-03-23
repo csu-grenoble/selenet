@@ -17,49 +17,49 @@
     },
 
     {
-      "id": "Sensor_Apollo_11",
+      "id": "Gnd_Apollo_11",
       "src": "assets/images/apollo-11.jpg",
       "description": "Apollo 11"
     },
 
     {
-      "id": "Sensor_Apollo_14",
+      "id": "Gnd_Apollo_14",
       "src": "assets/images/apollo-14.jpg",
       "description": "Apollo 14"
     },
 
     {
-      "id": "Sensor_Apollo_15",
+      "id": "Gnd_Apollo_15",
       "src": "assets/images/apollo-15.png",
       "description": "Apollo 15"
     },
 
     {
-      "id": "Sensor_Apollo_16",
+      "id": "Gnd_Apollo_16",
       "src": "assets/images/apollo-16.png",
       "description": "Apollo 16"
     },
 
     {
-      "id": "Sensor_Lunokhod_1",
+      "id": "Gnd_Lunokhod_1",
       "src": "assets/images/lunokhod-1.png",
       "description": "Lunokhod 1"
     },
 
     {
-      "id": "Sensor_Lunokhod_2",
+      "id": "Gnd_Lunokhod_2",
       "src": "assets/images/lunokhod-2.jpg",
       "description": "Lunokhod 2"
     },
 
     {
-      "id": "Sensor_Lunar_Base_Station",
+      "id": "Gnd_Lunar_Base_Station",
       "src": "assets/images/lunar-base.jpg",
       "description": "Lunar Base"
     },
 
     {
-      "id": "Sensor_Lunar_Crater_Radio_Telescope",
+      "id": "Gnd_Lunar_Crater_Radio_Telescope",
       "src": "assets/images/lcrt.jpg",
       "description": "Lunar Crater Radio Telescope"
     }

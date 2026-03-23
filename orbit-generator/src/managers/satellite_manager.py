@@ -60,7 +60,8 @@ def process_all_satellites(spk_files, spk_path, db_satellites):
 
             # Metadata & Packet
             info_db = db_satellites.get(file, {})
-            sat_name = info_db.get('nom_affichage', f"Obj {id_sat}")
+            #sat_name = info_db.get('nom_affichage', f"Obj {id_sat}")
+            sat_name = info_db.get('nom_affichage', f"Sat{id_sat}")
 
             desc_html = czml_utils.generate_html_description(info_db)
             color = config.SATELLITES_COLOR_MAP[index % len(config.SATELLITES_COLOR_MAP)]

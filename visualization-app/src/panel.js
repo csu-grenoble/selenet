@@ -9,17 +9,14 @@ export function handle_panel(dataSource){
     
     var entities = dataSource.entities.values
     entities.forEach(entity => {
-        if(entity.billboard || entity.id.match(SensorRegex)){
+        if(entity.billboard || entity.id.match(regexGnd)){
             const checkbox = document.getElementById(entity.id)
             checkbox.addEventListener("change" , display_Sat(entity.id,checkbox,dataSource))
         }
     })
-
-    //Sat85.show = checkbox_moon1.checked;
-    //Sat916300.show = checkbox_moon2.checked;
 }
 
-var SensorRegex= new RegExp("Sensor")
+var regexGnd= new RegExp("Gnd")
 
 export function create_panel(dataSource){
     var panel = document.getElementById("sidePanel")
@@ -43,10 +40,8 @@ export function create_panel(dataSource){
         }
     })
 
-    //var SensorRegex= new RegExp("Sensor")
-
     entities.forEach(entity => {
-        if(entity.id.match(SensorRegex)){
+        if(entity.id.match(regexGnd)){
             const container = document.getElementById("box_sensor")
             const label = document.createElement("label")
             const checkbox = document.createElement("input")
@@ -61,21 +56,6 @@ export function create_panel(dataSource){
             container.appendChild(label)
         }
     })
-}
-
-function show85(id,dataSource){
-    const link = dataSource.entities.getById(id)
-    var name = link.name
-    
-    const entities = dataSource.entities.values
-    entities.forEach(entity => {
-        var regex = new RegExp("85")
-        if(entity.name.match(/85/g)){
-            entity.show = true
-        }
-
-    });
-
 }
 
 function display_Sat(id,checkbox,dataSource){

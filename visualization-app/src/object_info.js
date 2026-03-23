@@ -16,7 +16,7 @@ export function display_details(viewer,dataSource,id){
 
     infoContent.innerHTML = "";
 
-    const regexSensor = RegExp("Sensor")
+    const regexGnd = RegExp("Gnd")
     const regexSat1 = RegExp("Sat_")
     const regexSat2 = RegExp("Satellite")
    
@@ -41,7 +41,7 @@ export function display_details(viewer,dataSource,id){
         })
     }
 
-    if(entity.id.match(regexSensor)){
+    if(entity.id.match(regexGnd)){
         const entities = dataSource.entities.values
         const regex = new RegExp(id)
 

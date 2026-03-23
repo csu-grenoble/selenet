@@ -104,7 +104,7 @@ def generate_fixed_station_packet(station_id, name, lon, lat, iso_start, iso_end
     with a label and a point marker.
     """ 
     return {
-        "id": f"Sensor_{station_id}",
+        "id": f"Gnd_{station_id}",
         "name": name,
         "availability": "0000-01-01T00:00:00Z/9999-12-31T23:59:59Z",
         "label": {
@@ -179,7 +179,7 @@ def generate_PointToSat_link_packet(sat_id, point_id, intervals, description_int
             },
             "arcType": "NONE", 
             "positions": {
-                "references": [f"Sat_{sat_id}#position", f"Sensor_{point_id}#position"]
+                "references": [f"Sat_{sat_id}#position", f"Gnd_{point_id}#position"]
             }
         }
     }

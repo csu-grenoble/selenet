@@ -25,7 +25,7 @@ OUTPUT_FILENAME = 'global_simu_data.czml'
 
 # --- SIMULATION PARAMETERS ---
 PAS_EN_SECONDES = 30
-NOMBRE_DE_POINTS = 5000
+NOMBRE_DE_POINTS = 1000 
 
 # --- PHYSICAL CONTACT THRESHOLD ---
 DISTANCE_CONTACT_KM = 5000 # Max distance for inter-satellite contact in km
