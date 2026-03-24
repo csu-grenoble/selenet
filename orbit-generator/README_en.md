@@ -1,4 +1,4 @@
-# Calculation Engine 
+# SeleNet :: Calculation Engine 
 
 This folder contains the Python scripts and data necessary to calculate the precise positions of satellites (LRO, Clementine, Apollo) around the Moon and to generate visualization files for Cesium.
 
@@ -172,3 +172,7 @@ where:
 - v_r​: Radial velocity (m/s).
 - c_light: Speed of light (≈299792458 m/s).
 - f0: Nominal carrier frequency (Hz) defined in config.py (FREQ_MHZ).
+
+## References
+* Annex et al., (2020). SpiceyPy: a Pythonic Wrapper for the SPICE Toolkit. Journal of Open Source Software, 5(46), 2050, https://doi.org/10.21105/joss.02050
+* SpicePy documentation https://spiceypy.readthedocs.io/en/stable/index.html

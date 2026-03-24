@@ -179,3 +179,8 @@ où :
 - `v_r`​ : Vitesse radiale (m/s).
 - `c_light` : Vitesse de la lumière (≈299792458 m/s).
 - `f0`​ : Fréquence nominale de la porteuse (Hz) définie dans `config.py` (FREQ_MHZ).
+
+
+## References
+* Annex et al., (2020). SpiceyPy: a Pythonic Wrapper for the SPICE Toolkit. Journal of Open Source Software, 5(46), 2050, https://doi.org/10.21105/joss.02050
+* SpicePy documentation https://spiceypy.readthedocs.io/en/stable/index.html
