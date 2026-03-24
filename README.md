@@ -10,9 +10,9 @@ Follow the instructions
 
 ## Media
 
-📽️ Video coming soon
+📽️ [Video](media/demo.webm)
 
-🪧 Poster coming soon
+🪧 [Poster](media/poster.pdf)
 
 ![](media/selenet-cesium-01.jpg)
 ![](media/selenet-cesium-02.jpg)
