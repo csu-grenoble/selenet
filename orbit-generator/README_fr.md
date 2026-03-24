@@ -3,7 +3,7 @@
 Ce dossier contient les scripts Python et les données nécessaires pour calculer les positions précises des satellites (LRO, Clementine, Apollo) autour de la Lune et générer les fichiers de visualisation pour Cesium.
 
 ## 1. Présentation
-Le module utilise SPICE via la bibliothèque SpicePy, une interface python développée par les ingénieurs de la NASA.
+Le module utilise [SPICE](https://naif.jpl.nasa.gov/naif/) via la bibliothèque [SpicePy](https://spiceypy.readthedocs.io/en/stable/index.html), une interface python développée par les ingénieurs de la NASA.
 
 **SPICE** est la bibliothèque officielle de la NASA (NAIF) pour la navigation spatiale.
 
@@ -182,5 +182,8 @@ où :
 
 
 ## References
+* SPICE : An Observation Geometry System for Space Science Missions https://naif.jpl.nasa.gov/naif/
+  * https://naif.jpl.nasa.gov/naif/tutorials.html
+  * https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/Tutorials/pdf/individual_docs/
 * Annex et al., (2020). SpiceyPy: a Pythonic Wrapper for the SPICE Toolkit. Journal of Open Source Software, 5(46), 2050, https://doi.org/10.21105/joss.02050
 * SpicePy documentation https://spiceypy.readthedocs.io/en/stable/index.html

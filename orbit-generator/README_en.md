@@ -4,7 +4,7 @@ This folder contains the Python scripts and data necessary to calculate the prec
 
 ## 1. Presentation
 
-The module uses SPICE through the SpiceyPy library, a Python interface developed by NASA engineers.
+The module uses [SPICE](https://naif.jpl.nasa.gov/naif/) through the [SpicePy](https://spiceypy.readthedocs.io/en/stable/index.html) library, a Python interface developed by NASA engineers.
 
 **SPICE** is NASA's official library (NAIF) for space navigation.
 In this project, we use it to:
@@ -36,7 +36,7 @@ pip install spiceypy numpy matplotlib
 
 Once the environment is set up, you must navigate to the **src/** folder.
 
-Run the command *python main.py* or *python3 main.py*.
+Run the command `python src/main.py` or `python3 src/main.py`
 
 This command will generate the final CZML file that will be used by the visual component.
 
@@ -53,15 +53,15 @@ Here is the explanation for each folder and file:
 * **src/**:
   * **managers/**: This folder manages entities.
   * **utils/**: This folder:
-    * Centralizes utility functions for manipulating the SpiceyPy library (spice_utils.py) and generating CZML format packets (czml_utils.py).
+    * Centralizes utility functions for manipulating the SpiceyPy library (`spice_utils.py`) and generating CZML format packets (`czml_utils.py`).
     * Gather all algorithms for calculating communication links and the Doppler effect.
-    * Integrates performance tools (perf_utils.py).
+    * Integrates performance tools (`perf_utils.py`).
 
 * **config.py**: This file centralizes the global parameters of the calculation engine, such as access paths to SPICE Kernels, simulation time steps, and physical constants for link budgets.
 
-* **fixe_coord.js**: This file lists the geographic coordinates (latitude, longitude, altitude) of all fixed points on the lunar surface.
+* **ground_objects.db.json**: This JSON file lists the geographic coordinates (latitude, longitude, altitude) of all fixed points of interest/sites on the lunar surface.
 
-* **satellites_db.js**: This file lists the technical characteristics concerning the studied satellites.
+* **satellites.db.json**: This JSON file lists the technical characteristics concerning the studied satellites.
 
 * **main.py**: This file serves as the main orchestrator of the project; it calls the various managers to perform all calculations and generate the final CZML file grouping all entities.
 
@@ -174,5 +174,8 @@ where:
 - f0: Nominal carrier frequency (Hz) defined in config.py (FREQ_MHZ).
 
 ## References
+* SPICE : An Observation Geometry System for Space Science Missions https://naif.jpl.nasa.gov/naif/
+  * https://naif.jpl.nasa.gov/naif/tutorials.html
+  * https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/Tutorials/pdf/individual_docs/
 * Annex et al., (2020). SpiceyPy: a Pythonic Wrapper for the SPICE Toolkit. Journal of Open Source Software, 5(46), 2050, https://doi.org/10.21105/joss.02050
 * SpicePy documentation https://spiceypy.readthedocs.io/en/stable/index.html
