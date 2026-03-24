@@ -43,3 +43,23 @@ Assets are into the directory [`visualization-app/public/assets/images`](visuali
   * [Bundle](https://www.nasa.gov/wp-content/uploads/2023/09/dtn-tutorial-v3.2-0.pdf)
   * [Bundle Ressources](https://github.com/dtn7/awesome-dtn)
 
+### Thanks
+Special thanks to the [ANR STEREO](https://anr.fr/Projet-ANR-22-CE25-0014) project 
+
+<img src="media/logos/ANR-logo-2021-sigle.png" alt="ANR logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/Cometes_Logo_RVB.png" alt="Cometes logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/France%202030%20500x500.png" alt="France 2030 logo" height="100" />
+
+<br/><br/>
+
+<img src="media/logos/IPAGlogoPos-vignette.png" alt="IPAG logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/LCIS.png" alt="LCIS logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/Logo-ISTERRE.png" alt="ISTERRE logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/logo-CSUG.png" alt="CSUG logo" height="100" />
+
+<br/><br/>
+
+<img src="media/logos/logo-lig_0.svg" alt="LIG logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/logo-liphy_0.svg" alt="LIPHY logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/uga.png" alt="UGA logo" height="100" />&nbsp;&nbsp;&nbsp;
+<img src="media/logos/Grenoble-INP-Polytech-Grenoble-couleur-RVB.png" alt="Grenoble INP Polytech Grenoble logo" height="100" />
