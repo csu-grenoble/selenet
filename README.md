@@ -14,6 +14,8 @@ Follow the instructions
 
 🪧 [Poster](media/poster.pdf)
 
+🖵 [Short presentation](https://docs.google.com/presentation/d/1CrbNVvRWH_qKR-u5zr2RJcTWSQ1fXlkYI4_JCMqdiHw/present)
+
 ![](media/selenet-cesium-01.jpg)
 ![](media/selenet-cesium-02.jpg)
 
