@@ -10,7 +10,7 @@ Follow the instructions
 
 ## Media
 
-📽️ [Video](media/demo.webm)
+📽️ [Video](https://youtu.be/9mYcGOmAJgE)
 
 🪧 [Poster](media/poster.pdf)
 
