@@ -5,6 +5,12 @@
         "longitude": 23.47315
     },
     {
+        "text": "Apollo_12",
+        "url": "https://en.wikipedia.org/wiki/Apollo_12",
+        "latitude": -3.01239,
+        "longitude": -23.42157
+    },
+    {
         "text": "Apollo_14",
         "latitude": -3.64417,
         "longitude": 342.52135
@@ -20,6 +26,18 @@
         "longitude": -156.216667
     },
     {
+        "text": "Apollo_17",
+        "description": "Taurus–Littrow",
+        "url": "https://en.wikipedia.org/wiki/Apollo_17",
+        "latitude": 20.1908,
+        "longitude": -30.7717
+    },
+    {
+        "text": "Apollo_17_SaturnV",
+        "latitude": -4.21,
+        "longitude": -12.31
+    },
+    {
         "text": "Lunokhod_1",
         "latitude": 38.2378,
         "longitude": -35.0017
@@ -30,13 +48,24 @@
         "longitude": 30.92215
     },
     {
-        "text": "Lunar_Base_Station",
-        "latitude": -90.0,
+        "text": "Lunar_Crater_Radio_Telescope",
+        "description": "Saha crater",
+        "url": "https://en.wikipedia.org/wiki/Lunar_Crater_Radio_Telescope",
+        "latitude": 1.6,
+        "longitude": 102.7
+    },
+    {
+        "text": "South_Base_Station",
+        "description": "Shackleton crater",
+        "url": "https://en.wikipedia.org/wiki/Shackleton_(crater)",
+        "latitude": -89.9,
         "longitude": 0.0
     },
     {
-        "text": "Lunar_Crater_Radio_Telescope",
-        "latitude": 0.0,
-        "longitude": 180.0
+        "text": "Marius_Base_Station",
+        "description": "Marius Lava Tunnel",
+        "url": "https://en.wikipedia.org/wiki/Lunar_Crater_Radio_Telescope",
+        "latitude": 14.072453,
+        "longitude": -56.749303
     }
 ]
