@@ -6,6 +6,7 @@
 * [ ] add sensors list for each site
 * [x] add [Apollo S16](https://en.wikipedia.org/wiki/Apollo_16) to [ground_object.db.json](orbit-generator/ground_objects.db.json)
   * A. Torrent Duch et al., The Moon's crust and upper mantle discontinuities revealed by seismic interferometry methods applied to Apollo seismic data, Journal of Geophysical Research: Planets, 130, e2025JE009090, (2025), https://doi.org/10.1029/2025JE009090
+* [ ] add https://en.wikipedia.org/wiki/Chandrayaan-1
 
 ## Kernels
 
