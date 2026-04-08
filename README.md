@@ -38,6 +38,7 @@ Assets are into the directory [`visualization-app/public/assets/images`](visuali
   * [IRTF SPACE Research Group (SPACE RG)](https://www.irtf.org/spacerg.html)
   * ❤️ Ntontin et al. A Vision, Survey, and Roadmap Toward Space Communications in the 6G and Beyond Era, DIO: [10.1109/JPROC.2024.3512934](https://ieeexplore.ieee.org/document/10820534)
   * [Interagency Operations Advisory Group (IOAG), “Mars Communications Architecture Report - Final”, 2023.](https://ioag.org/wp-content/uploads/gravity_forms/6-1a23b5e730ab942f4b44183168a5bb93/2025/04/MBC-architecture-report-final-version-PDF.pdf)
+  * [Taking IP To Other Planets (tiptop)](https://datatracker.ietf.org/group/tiptop/about/)
   
 ### Delay-Tolerant Networks (DTN)
   * [Bundle](https://www.nasa.gov/wp-content/uploads/2023/09/dtn-tutorial-v3.2-0.pdf)
