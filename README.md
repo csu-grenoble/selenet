@@ -50,7 +50,7 @@ Assets are into the directory [`visualization-app/public/assets/images`](visuali
   * [Deploying and Using Email in Deep Space](https://datatracker.ietf.org/doc/draft-many-tiptop-email/)
   * https://deepspaceip.github.io
   * https://deepspaceip.github.io/meetings/ietf124/
-  * https://www.youtube.com/watch?v=O2dIowVrIhI&t=3s (in french 🇨🇦)
+  * [La suite du protocole Internet dans l’espace (JCSA24)](https://www.youtube.com/watch?v=O2dIowVrIhI&t=3s) (in french 🇨🇦) [slides](https://www.afnic.fr/wp-media/uploads/2024/11/JCSA-2024-Marc-BLANCHET-La-suite-du-protocole-Internet-dans-lEspace.pdf)
 
 ### Time
 * https://www.nasa.gov/general/nasa-to-develop-lunar-time-standard-for-exploration-initiatives/#:~:text=The%20lunar%20time%20will%20be,Coordinated%20Universal%20Time%20(UTC)%3E
