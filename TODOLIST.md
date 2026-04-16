@@ -6,18 +6,27 @@
 * [ ] add sensors list for each site
 * [x] add [Apollo S16](https://en.wikipedia.org/wiki/Apollo_16) to [ground_object.db.json](orbit-generator/ground_objects.db.json)
   * A. Torrent Duch et al., The Moon's crust and upper mantle discontinuities revealed by seismic interferometry methods applied to Apollo seismic data, Journal of Geophysical Research: Planets, 130, e2025JE009090, (2025), https://doi.org/10.1029/2025JE009090
+* [ ] add https://en.wikipedia.org/wiki/Chandrayaan-1
+
+## Kernels
+
+* [ ] add ref to the origin of tke kernel files
+  * [ ] https://www.researchgate.net/publication/268579859_NASA_GSFC_lunar_reconnaissance_orbiter_LRO_orbit_estimation_and_prediction
 
 
 ## Orbit generation
 
+* [ ] lint source code
 * [ ] WIP : translate variables and constants names in english
 * [ ] WIP : translate comments in english 
 * [ ] add more infos to vizualising into [ground_object.db.json](orbit-generator/ground_objects.db.json)
 * [ ] add more infos to vizualising into [satellites.db.json](orbit-generator/satellites.db.json)
+* [ ] add dopler graphes for sat to sat links
 
 ## Vizualisation
 
 * [ ] lint source code
+* [ ] show dopler graphes for sat to sat links
 * [ ] improve the labels of satellites and ground endpoints/sites
 * [ ] translate comments in english 
 * [ ] add more info related to objets (speed, min max dopler, altitude, FSPL, link margin @ SF12)

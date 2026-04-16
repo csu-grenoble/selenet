@@ -14,7 +14,7 @@ Follow the instructions
 
 🪧 [Poster](media/poster.pdf)
 
-🖵 [Short presentation](https://docs.google.com/presentation/d/1CrbNVvRWH_qKR-u5zr2RJcTWSQ1fXlkYI4_JCMqdiHw/present)
+🎞️ [Short presentation](https://docs.google.com/presentation/d/1CrbNVvRWH_qKR-u5zr2RJcTWSQ1fXlkYI4_JCMqdiHw/present)
 
 ![](media/selenet-cesium-01.jpg)
 ![](media/selenet-cesium-02.jpg)
@@ -39,9 +39,22 @@ Assets are into the directory [`visualization-app/public/assets/images`](visuali
   * ❤️ Ntontin et al. A Vision, Survey, and Roadmap Toward Space Communications in the 6G and Beyond Era, DIO: [10.1109/JPROC.2024.3512934](https://ieeexplore.ieee.org/document/10820534)
   * [Interagency Operations Advisory Group (IOAG), “Mars Communications Architecture Report - Final”, 2023.](https://ioag.org/wp-content/uploads/gravity_forms/6-1a23b5e730ab942f4b44183168a5bb93/2025/04/MBC-architecture-report-final-version-PDF.pdf)
   
-### Delay-Tolerant Networks (DTN)
+### Delay-Tolerant Networks (DTN) & Store-Carry-and-Forward
+
+#### Bundle DTN
   * [Bundle](https://www.nasa.gov/wp-content/uploads/2023/09/dtn-tutorial-v3.2-0.pdf)
   * [Bundle Ressources](https://github.com/dtn7/awesome-dtn)
+
+#### Taking IP To Other Planets (tiptop)
+  * [Taking IP To Other Planets (tiptop)](https://datatracker.ietf.org/group/tiptop/about/)
+  * [Deploying and Using Email in Deep Space](https://datatracker.ietf.org/doc/draft-many-tiptop-email/)
+  * https://deepspaceip.github.io
+  * https://deepspaceip.github.io/meetings/ietf124/
+  * [La suite du protocole Internet dans l’espace (JCSA24)](https://www.youtube.com/watch?v=O2dIowVrIhI&t=3s) (in french 🇨🇦) [slides](https://www.afnic.fr/wp-media/uploads/2024/11/JCSA-2024-Marc-BLANCHET-La-suite-du-protocole-Internet-dans-lEspace.pdf)
+
+### Time
+* https://www.nasa.gov/general/nasa-to-develop-lunar-time-standard-for-exploration-initiatives/#:~:text=The%20lunar%20time%20will%20be,Coordinated%20Universal%20Time%20(UTC)%3E
+* SPICE Time Chapter
 
 ### Thanks
 Special thanks to the [ANR STEREO](https://anr.fr/Projet-ANR-22-CE25-0014) project 
