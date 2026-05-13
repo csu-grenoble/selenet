@@ -56,6 +56,10 @@ Assets are into the directory [`visualization-app/public/assets/images`](visuali
 * https://www.nasa.gov/general/nasa-to-develop-lunar-time-standard-for-exploration-initiatives/#:~:text=The%20lunar%20time%20will%20be,Coordinated%20Universal%20Time%20(UTC)%3E
 * SPICE Time Chapter
 
+### Misc
+* [Moon Base User’s Guide Architecture Resources](https://www.nasa.gov/wp-content/uploads/2026/04/moon-base-architecture-users-guide.pdf)
+
+
 ### Thanks
 Special thanks to the [ANR STEREO](https://anr.fr/Projet-ANR-22-CE25-0014) project 
 
