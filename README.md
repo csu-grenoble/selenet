@@ -53,12 +53,16 @@ Assets are into the directory [`visualization-app/public/assets/images`](visuali
   * [La suite du protocole Internet dans l’espace (JCSA24)](https://www.youtube.com/watch?v=O2dIowVrIhI&t=3s) (in french 🇨🇦) [slides](https://www.afnic.fr/wp-media/uploads/2024/11/JCSA-2024-Marc-BLANCHET-La-suite-du-protocole-Internet-dans-lEspace.pdf)
 
 ### Time
-* https://www.nasa.gov/general/nasa-to-develop-lunar-time-standard-for-exploration-initiatives/#:~:text=The%20lunar%20time%20will%20be,Coordinated%20Universal%20Time%20(UTC)%3E
+* NASA, "NASA to Develop Lunar Time Standard for Exploration Initiatives", September 2024 https://www.nasa.gov/general/nasa-to-develop-lunar-time-standard-for-exploration-initiatives/#:~:text=The%20lunar%20time%20will%20be,Coordinated%20Universal%20Time%20(UTC)%3E
 * SPICE Time Chapter
 
 ### Misc
 * [Moon Base User’s Guide Architecture Resources](https://www.nasa.gov/wp-content/uploads/2026/04/moon-base-architecture-users-guide.pdf)
-
+* [International Communication System Interoperability Standards (ICSIS), September 2020](https://internationaldeepspacestandards.com/wp-content/uploads/2024/02/communication_reva_final_9-2020.pdf)
+* [LunaNet Interoperability Specification - Version 5, February 2025](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/lunanet-interoperability-specification)
+* Gladden, R., "Mars Relay Operations Service (MaROS): A Present Service Preparing for the Future", May 2014
+* [Blanchet, M., "Earth-Mars Communication Windows Usage Study", October 2024](https://deepspaceip.github.io/meetings/ietf121/ietf121-deepspaceip-mars-communications-study.pdf)
+* [Mars and Beyond Communications Architecture Working Group, Interagency Operations Advisory Group, "The Future Mars Communications Architecture, Report of the Interagency Operations Advisory Group", February 2022](https://www.ioag.org/Public%20Documents/MBC%20architecture%20report%20final%20version%20PDF.pdf)
 
 ### Thanks
 Special thanks to the [ANR STEREO](https://anr.fr/Projet-ANR-22-CE25-0014) project 
