@@ -8,6 +8,9 @@
 * [ ] add more [landing sites](https://en.wikipedia.org/wiki/Moon_landing) into the [database](orbit-generator/ground_objects.db.json).
   * [x] add [Blue Ghost Mission 1](https://fireflyspace.com/missions/blue-ghost-mission-1/)
   * [x] add [Apollo S16](https://en.wikipedia.org/wiki/Apollo_16) to [database](orbit-generator/ground_objects.db.json)
+  * [ ] add impact of [SpaceX Falcon 9 (NORAD 62719)](https://www.n2yo.com/satellite/?s=62719) (5 August 2026 near Einstein Crater ?)
+  * [ ] add Centaur rocket impact
+  * [ ] add LCROSS https://en.wikipedia.org/wiki/LCROSS
 * [ ] add more orbiters into the [database](orbit-generator/satellites.db.json)
   * [ ] add https://en.wikipedia.org/wiki/Chandrayaan-1
 
